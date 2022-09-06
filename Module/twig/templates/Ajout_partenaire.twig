@@ -1,0 +1,41 @@
+{% extends 'layout.twig' %}
+
+{% block head %}
+   <title>Mail inscription partenaire</title>
+{% endblock %}
+
+{% block content %}
+
+<table>
+
+<tr>
+<td>
+     <p><strong>De:</strong> geoffrey.marhoffer@gmail.com</br>
+     <strong>a:</strong> {{params.mail}}</br>
+     <strong>Objet de l'email:</strong> Confirmation de l'inscription de votre marque de sport</p>
+     </td>
+</tr>
+
+<tr>
+<td>
+<main class="main">
+     <p>Cher client <strong>{{params.client_name}}</strong></p>
+     <p>Votre marque de sport <strong>{{params.client_name}}</strong> a bien été ajoutée à l'application Gestionnaire de salle de sport.</p>
+
+     <p>Vos données d'identifications sont les suivantes:</p>
+     <p>utilisateur: <strong>{{params.client_name}}</strong></p>
+     <p>mot de passe: <strong>{{params.password}}</strong></p>
+
+     <button class="btn btn-primary"><a class="white" href='http://localhost:83/ECF_APP_SPORT_COPIE/index.php' target="_blank">Mon espace client</a></button>
+
+     <p>Cordialement</p>
+     <p><strong>Gestionnaire de salle de sport</strong></p>
+
+     <p><a class="small" href="">Click here to unsubscribe</a></p> 
+</main>
+</td>
+</tr>
+
+</table>
+
+{% endblock %} 

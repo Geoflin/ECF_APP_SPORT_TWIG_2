@@ -1,0 +1,12 @@
+{
+    "name": "grafikart/twig",
+    "authors": [
+        {
+            "name": "Guillaume Baur",
+            "email": "guilaume.baur@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "~1.0"
+    }
+}

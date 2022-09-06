@@ -1,0 +1,76 @@
+{% extends 'layout.twig' %}
+
+{% block head %}
+   <title>Mail inscription partenaire</title>
+{% endblock %}
+
+{% block content %}
+
+<table>
+
+<tr>
+<td>
+     <p><strong>De:</strong> Gestionnaire de salle de sport geoffrey.marhoffer@gmail.com</br>
+     <strong>a:</strong> {{params.mail}}</br>
+     <strong>Objet de l'email:</strong> Confirmation inscription: {{params.nom}} pour votre marque {{params.client_name}}</p>
+     </td>
+</tr>
+
+<tr>
+<td>
+<main class="main">
+     <p>Cher client <strong>{{params.client_name}}</strong></p>
+
+     <p>Une nouvelle salle de sport <strong>{{params.Nom}}</strong> a été ajouté à votre compte gestionnaire de salle de sport.</p>
+     <p>cliquez sur le lien ci-dessous pour voir l'inscription:</p>
+
+     <button class="btn btn-primary"><a class="white" href='http://localhost:83/ECF_APP_SPORT_COPIE/index.php' target="_blank">Mon espace client</a></button>
+
+     <p>Cordialement</p>
+     <p><strong>Gestionnaire de salle de sport</strong></p>
+
+     <p><a class="small" href="">Click here to unsubscribe</a></p> 
+</main>
+</td>
+</tr>
+
+</table>
+
+<table>
+
+<tr>
+<td>
+     <p><strong>De:</strong> Gestionnaire de salle de sport geoffrey.marhoffer@gmail.com</br>
+     <strong>a:</strong>{{params.mail_salle}}</br>
+     <strong>Objet de l'email:</strong> Le compte de votre salle de sport {{params.nom}} a été créé</p>
+     </td>
+</tr>
+
+<tr>
+<td>
+<main class="main">
+     <p>Cher client <strong>{{params.nom}}</strong></p>
+
+     <p>Le compte de votre salle de sport <strong>{{params.nom}}</strong> a bien été ajoutée à l'application Gestionnaire de salle de sport.</p>
+
+     <p>Vos données d'identifications sont les suivantes:</p>
+     <p>utilisateur: <strong>{{params.nom}}</strong></p>
+     <p>mot de passe: <strong>{{params.password_salle}}</strong></p>
+
+     <p>Le bouton ci-dessous vous permettra d'accéder à votre compte:</p>
+
+     <button class="btn btn-primary"><a class="white" href='http://localhost:83/ECF_APP_SPORT_COPIE/index.php' target="_blank">Mon espace client</a></button>
+
+     <p>Cordialement</p>
+     <p><strong>Gestionnaire de salle de sport</strong></p>
+
+     <p><a class="small" href="">Click here to unsubscribe</a></p> 
+</main>
+</td>
+</tr>
+
+</table>
+
+{% endblock %} 
+
+

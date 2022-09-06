@@ -1,0 +1,69 @@
+{% extends 'layout.twig' %}
+
+{% block head %}
+   <title>Mail inscription partenaire</title>
+{% endblock %}
+
+{% block content %}
+
+<table>
+
+<tr>
+<td>
+     <p><strong>De:</strong> geoffrey.marhoffer@gmail.com</br>
+     <strong>a:</strong> {{params.mail_partenaire}}</br>
+     <strong>Objet de l'email:</strong> Votre salle de sport: {{params.nom_salle}} de votre marque: {{params.client_name}} a été {{params.salle_active_ou_desactivee}}</p>
+     </td>
+</tr>
+
+<tr>
+<td>
+<main class="main">
+     <p>Cher client <strong>{{params.client_name}}</strong>,</p>
+     <p>Votre salle de sport: <strong>{{params.nom_salle}}</strong> a été <strong>{{params.salle_active_ou_desactivee}}</strong>.</p>
+
+     <p>Le bouton ci-dessous vous permettra de prendre connaissance de ces nouvelles informations.</p>
+
+     <button class="btn btn-primary"><a class="white" href='http://localhost:83/ECF_APP_SPORT_COPIE/index.php' target="_blank">Mon espace client</a></button>
+
+     <p>Cordialement</p>
+     <p><strong>Gestionnaire de salle de sport</strong></p>
+
+     <p><a class="small" href="">Click here to unsubscribe</a></p> 
+</main>
+</td>
+</tr>
+
+</table>
+
+<table>
+
+<tr>
+<td>
+     <p><strong>De:</strong> geoffrey.marhoffer@gmail.com</br>
+     <strong>a:</strong> {{params.mail_structure}}</br>
+     <strong>Objet de l'email:</strong> Votre salle de sport: {{params.nom_salle}} de votre marque: {{params.client_name}} a été {{params.salle_active_ou_desactivee}}</p>
+     </td>
+</tr>
+
+<tr>
+<td>
+<main class="main">
+     <p>Cher client <strong>{{params.client_name}}</strong>,</p>
+     <p>Votre salle de sport: <strong>{{params.nom_salle}}</strong> a été <strong>{{params.salle_active_ou_desactivee}}</strong>.</p>
+
+     <p>Le bouton ci-dessous vous permettra de prendre connaissance de ces nouvelles informations.</p>
+
+     <button class="btn btn-primary"><a class="white" href='http://localhost:83/ECF_APP_SPORT_COPIE/index.php' target="_blank">Mon espace client</a></button>
+
+     <p>Cordialement</p>
+     <p><strong>Gestionnaire de salle de sport</strong></p>
+
+     <p><a class="small" href="">Click here to unsubscribe</a></p> 
+</main>
+</td>
+</tr>
+
+</table>
+
+{% endblock %} 

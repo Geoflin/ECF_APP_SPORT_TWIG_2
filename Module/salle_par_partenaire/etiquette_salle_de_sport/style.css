@@ -1,0 +1,41 @@
+.display_none{
+  display: none;
+}
+
+.etiquette_salle_de_sport{
+    height: max-content;
+    border: 3px solid green;
+    margin: 0px 0px 0px 0px;
+}
+.image_salle_de_sport_et_information_salle_de_sport{
+    display: flex;
+    justify-content: space-between;
+    width: 16vw;
+}
+.image_salle_de_sport{
+    float: left;
+}
+.information_salle_de_sport{
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+    
+/*style sur petits écrans*/
+@media screen and (max-width: 750px){
+  .etiquette_salle_de_sport{
+    height: max-content;
+    border: 3px solid green;
+    margin: 0px 0px 0px 0px;
+    width: min-content;
+}
+.image_salle_de_sport_et_information_salle_de_sport{
+  display: flex;
+  justify-content: space-between;
+  width: min-content;
+  margin-left: 80vw;
+}
+}
